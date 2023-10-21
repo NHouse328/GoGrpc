@@ -21,7 +21,7 @@ func main() {
 
 	startTime := time.Now()
 
-	for i := 1; i <= 5; i++ {
+	for i := 1; i <= 1000; i++ {
 		log.Println(i)
 
 		name := fmt.Sprintf("Gabriel %d", i)

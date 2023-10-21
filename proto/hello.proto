@@ -1,0 +1,19 @@
+// Uso o comando para gerar
+// C:\Users\gabri\.local\bin\protoc --go_out=. --go-grpc_out=. proto/*.proto
+
+syntax = "proto3";
+
+// Onde vai gerar o código
+option go_package = "./pb";
+
+service Hello {
+    rpc SayHello (HelloRequest) returns (HelloResponse) {}
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloResponse {
+    string message = 1;
+}
